@@ -1,0 +1,964 @@
+{
+ "meta": {
+  "businesses_total": 5145,
+  "stories_total": 3233,
+  "businesses_with_revenue": 1489,
+  "source": "real founder case study dataset 2026-08",
+  "bias": "Selective sample: only profitable businesses are featured (survivorship). Revenue is self-reported/estimated, unverified. Figures skew optimistic."
+ },
+ "revenue": {
+  "overall": {
+   "n": 1489,
+   "P10": 2000,
+   "P25": 10000,
+   "P50": 45000,
+   "P75": 220000,
+   "P90": 750000,
+   "methodology": "monthly revenue field on profile pages",
+   "bias": "Survivorship + includes legacy companies founded pre-2010 (much larger). For realistic expectations use by_year_cohort."
+  },
+  "by_year_cohort": {
+   "2009": {
+    "n": 28,
+    "P25": 65000,
+    "P50": 185000,
+    "P75": 650000
+   },
+   "2010": {
+    "n": 24,
+    "P25": 22000,
+    "P50": 100000,
+    "P75": 550000
+   },
+   "2011": {
+    "n": 31,
+    "P25": 12000,
+    "P50": 54000,
+    "P75": 291000
+   },
+   "2012": {
+    "n": 46,
+    "P25": 19000,
+    "P50": 100000,
+    "P75": 400000
+   },
+   "2013": {
+    "n": 59,
+    "P25": 25000,
+    "P50": 250000,
+    "P75": 650000
+   },
+   "2014": {
+    "n": 61,
+    "P25": 10000,
+    "P50": 82000,
+    "P75": 275000
+   },
+   "2015": {
+    "n": 114,
+    "P25": 8000,
+    "P50": 42000,
+    "P75": 150000
+   },
+   "2016": {
+    "n": 97,
+    "P25": 10000,
+    "P50": 30000,
+    "P75": 150000
+   },
+   "2017": {
+    "n": 125,
+    "P25": 7000,
+    "P50": 30000,
+    "P75": 110000
+   },
+   "2018": {
+    "n": 146,
+    "P25": 4760,
+    "P50": 15000,
+    "P75": 62500
+   },
+   "2019": {
+    "n": 99,
+    "P25": 3200,
+    "P50": 12000,
+    "P75": 55000
+   },
+   "2020": {
+    "n": 77,
+    "P25": 1200,
+    "P50": 8500,
+    "P75": 25000
+   },
+   "bias": "Age effect dominates: older businesses have compounded longer. Same cohort = apples to apples."
+  }
+ },
+ "categories": {
+  "by_idea_category": {
+   "automation-ideas": {
+    "n": 21,
+    "P50": 83000,
+    "P75": 220000
+   },
+   "bubble-ideas": {
+    "n": 15,
+    "P50": 25000,
+    "P75": 150000
+   },
+   "david-vs-goliath": {
+    "n": 24,
+    "P50": 61000,
+    "P75": 150000
+   },
+   "digital-product-ideas": {
+    "n": 17,
+    "P50": 100000,
+    "P75": 200000
+   },
+   "freemium-and-open-source-ideas": {
+    "n": 22,
+    "P50": 26000,
+    "P75": 83000
+   },
+   "gpt-wrapper-ideas": {
+    "n": 19,
+    "P50": 16000,
+    "P75": 215000
+   },
+   "launched-with-website-builder": {
+    "n": 23,
+    "P50": 30000,
+    "P75": 130000
+   },
+   "m2m-by-makers-for-makers": {
+    "n": 21,
+    "P50": 125000,
+    "P75": 756000
+   },
+   "marketplaces": {
+    "n": 24,
+    "P50": 117000,
+    "P75": 375000
+   },
+   "micro-saas-ideas": {
+    "n": 18,
+    "P50": 16000,
+    "P75": 51300
+   },
+   "niche-blog-ideas": {
+    "n": 20,
+    "P50": 50000,
+    "P75": 125000
+   },
+   "niche-sites": {
+    "n": 24,
+    "P50": 40000,
+    "P75": 110000
+   },
+   "no-code-ideas": {
+    "n": 18,
+    "P50": 42000,
+    "P75": 108000
+   },
+   "one-page-websites": {
+    "n": 23,
+    "P50": 14000,
+    "P75": 20000
+   },
+   "problems": {
+    "n": 23,
+    "P50": 83000,
+    "P75": 250000
+   },
+   "productized-services": {
+    "n": 24,
+    "P50": 50000,
+    "P75": 175000
+   },
+   "solo-developer-ideas": {
+    "n": 22,
+    "P50": 77000,
+    "P75": 133000
+   },
+   "solopreneur-ideas": {
+    "n": 24,
+    "P50": 40000,
+    "P75": 175000
+   },
+   "travel-and-digital-nomad-ideas": {
+    "n": 23,
+    "P50": 35000,
+    "P75": 140000
+   },
+   "weird-but-profitable-ideas": {
+    "n": 21,
+    "P50": 125000,
+    "P75": 280000
+   }
+  },
+  "bias": "Category pages curate specific niches; n small (15-24). High variance: P75 often 3-6x P50."
+ },
+ "team": {
+  "founders_vs_revenue": {
+   "1": {
+    "n": 487,
+    "P50": 15000,
+    "pct_over_50k": 28.7
+   },
+   "2": {
+    "n": 251,
+    "P50": 50000,
+    "pct_over_50k": 50.2
+   },
+   "3": {
+    "n": 64,
+    "P50": 150000,
+    "pct_over_50k": 60.9
+   },
+   "4": {
+    "n": 22,
+    "P50": 200000,
+    "pct_over_50k": 77.3
+   }
+  },
+  "bias": "Correlation not causation: bigger teams usually follow revenue, not precede it. But solo projects dominate the lower half.",
+  "median_employees": 3
+ },
+ "channels": {
+  "interview_fulltext_frequency": {
+   "seo": {
+    "n": 1501,
+    "pct": 47.9
+   },
+   "paid_ads": {
+    "n": 1446,
+    "pct": 46.2
+   },
+   "podcast": {
+    "n": 1341,
+    "pct": 42.8
+   },
+   "facebook": {
+    "n": 1306,
+    "pct": 41.7
+   },
+   "communities": {
+    "n": 1210,
+    "pct": 38.6
+   },
+   "email_marketing": {
+    "n": 1108,
+    "pct": 35.4
+   },
+   "content_blog": {
+    "n": 1105,
+    "pct": 35.3
+   },
+   "instagram": {
+    "n": 1068,
+    "pct": 34.1
+   },
+   "influencer_affiliate": {
+    "n": 1003,
+    "pct": 32.0
+   },
+   "referral": {
+    "n": 939,
+    "pct": 30.0
+   },
+   "youtube": {
+    "n": 917,
+    "pct": 29.3
+   },
+   "partnerships": {
+    "n": 808,
+    "pct": 25.8
+   },
+   "linkedin": {
+    "n": 702,
+    "pct": 22.4
+   },
+   "twitter": {
+    "n": 629,
+    "pct": 20.1
+   },
+   "word_of_mouth": {
+    "n": 504,
+    "pct": 16.1
+   },
+   "cold_email": {
+    "n": 415,
+    "pct": 13.3
+   },
+   "events": {
+    "n": 394,
+    "pct": 12.6
+   },
+   "tiktok": {
+    "n": 331,
+    "pct": 10.6
+   },
+   "reddit": {
+    "n": 223,
+    "pct": 7.1
+   },
+   "sales_team": {
+    "n": 206,
+    "pct": 6.6
+   },
+   "product_hunt": {
+    "n": 163,
+    "pct": 5.2
+   },
+   "app_store_aso": {
+    "n": 95,
+    "pct": 3.0
+   },
+   "plg": {
+    "n": 95,
+    "pct": 3.0
+   }
+  },
+  "n_interviews": 3131,
+  "bias": "Mention frequency, NOT attribution. A founder mentioning 'SEO' in passing counts equal to one who credits SEO for all growth. Use as exploration surface, not causal ranking.",
+  "methodology": "keyword regex over full interview answers"
+ },
+ "tools": {
+  "discriminant": [
+   {
+    "tool": "Slack",
+    "top_pct": 33.4,
+    "bottom_pct": 16.9,
+    "delta_pp": 16.5
+   },
+   {
+    "tool": "Asana",
+    "top_pct": 11.1,
+    "bottom_pct": 5.2,
+    "delta_pp": 5.8
+   },
+   {
+    "tool": "HubSpot",
+    "top_pct": 13.7,
+    "bottom_pct": 8.1,
+    "delta_pp": 5.6
+   },
+   {
+    "tool": "Zendesk",
+    "top_pct": 6.6,
+    "bottom_pct": 1.7,
+    "delta_pp": 4.9
+   },
+   {
+    "tool": "Klaviyo",
+    "top_pct": 12.7,
+    "bottom_pct": 7.9,
+    "delta_pp": 4.8
+   },
+   {
+    "tool": "Google Adwords",
+    "top_pct": 17.0,
+    "bottom_pct": 13.3,
+    "delta_pp": 3.7
+   },
+   {
+    "tool": "ShipStation",
+    "top_pct": 7.8,
+    "bottom_pct": 4.1,
+    "delta_pp": 3.7
+   },
+   {
+    "tool": "Ahrefs",
+    "top_pct": 10.7,
+    "bottom_pct": 6.9,
+    "delta_pp": 3.7
+   },
+   {
+    "tool": "Amazon FBA",
+    "top_pct": 5.3,
+    "bottom_pct": 2.0,
+    "delta_pp": 3.3
+   },
+   {
+    "tool": "Intercom",
+    "top_pct": 4.7,
+    "bottom_pct": 1.5,
+    "delta_pp": 3.2
+   },
+   {
+    "tool": "Zapier",
+    "top_pct": 10.5,
+    "bottom_pct": 7.3,
+    "delta_pp": 3.2
+   },
+   {
+    "tool": "Google Shopping",
+    "top_pct": 9.6,
+    "bottom_pct": 6.6,
+    "delta_pp": 3.0
+   },
+   {
+    "tool": "Zoho",
+    "top_pct": 8.6,
+    "bottom_pct": 5.6,
+    "delta_pp": 3.0
+   },
+   {
+    "tool": "Google Tag Ma...",
+    "top_pct": 6.8,
+    "bottom_pct": 3.9,
+    "delta_pp": 2.9
+   },
+   {
+    "tool": "FedEx",
+    "top_pct": 6.1,
+    "bottom_pct": 3.5,
+    "delta_pp": 2.6
+   },
+   {
+    "tool": "Amazon Web Se...",
+    "top_pct": 5.3,
+    "bottom_pct": 2.7,
+    "delta_pp": 2.6
+   },
+   {
+    "tool": "Calendly",
+    "top_pct": 7.8,
+    "bottom_pct": 5.2,
+    "delta_pp": 2.6
+   },
+   {
+    "tool": "YotPo",
+    "top_pct": 4.3,
+    "bottom_pct": 1.9,
+    "delta_pp": 2.4
+   },
+   {
+    "tool": "Basecamp",
+    "top_pct": 3.9,
+    "bottom_pct": 1.5,
+    "delta_pp": 2.4
+   },
+   {
+    "tool": "LinkedIn Ads",
+    "top_pct": 4.1,
+    "bottom_pct": 1.9,
+    "delta_pp": 2.2
+   },
+   {
+    "tool": "ActiveCampaign",
+    "top_pct": 5.1,
+    "bottom_pct": 3.0,
+    "delta_pp": 2.1
+   },
+   {
+    "tool": "Bing Ads",
+    "top_pct": 5.3,
+    "bottom_pct": 3.2,
+    "delta_pp": 2.1
+   },
+   {
+    "tool": "GitHub",
+    "top_pct": 4.5,
+    "bottom_pct": 2.5,
+    "delta_pp": 2.0
+   },
+   {
+    "tool": "Typeform",
+    "top_pct": 3.7,
+    "bottom_pct": 1.7,
+    "delta_pp": 2.0
+   },
+   {
+    "tool": "Amazon Ads",
+    "top_pct": 3.7,
+    "bottom_pct": 1.7,
+    "delta_pp": 2.0
+   },
+   {
+    "tool": "Stamps.com",
+    "top_pct": 3.5,
+    "bottom_pct": 1.5,
+    "delta_pp": 2.0
+   },
+   {
+    "tool": "YouTube",
+    "top_pct": 34.8,
+    "bottom_pct": 32.9,
+    "delta_pp": 1.9
+   },
+   {
+    "tool": "Amazon",
+    "top_pct": 12.7,
+    "bottom_pct": 10.8,
+    "delta_pp": 1.9
+   },
+   {
+    "tool": "QuickBooks",
+    "top_pct": 27.5,
+    "bottom_pct": 25.7,
+    "delta_pp": 1.8
+   },
+   {
+    "tool": "Xero",
+    "top_pct": 3.9,
+    "bottom_pct": 2.2,
+    "delta_pp": 1.7
+   },
+   {
+    "tool": "Google ads",
+    "top_pct": 6.6,
+    "bottom_pct": 5.1,
+    "delta_pp": 1.5
+   },
+   {
+    "tool": "adobestock",
+    "top_pct": 3.3,
+    "bottom_pct": 2.4,
+    "delta_pp": 0.9
+   },
+   {
+    "tool": "Vimeo",
+    "top_pct": 4.3,
+    "bottom_pct": 3.4,
+    "delta_pp": 0.9
+   },
+   {
+    "tool": "Upwork",
+    "top_pct": 12.3,
+    "bottom_pct": 11.5,
+    "delta_pp": 0.8
+   },
+   {
+    "tool": "Twitter Ads",
+    "top_pct": 2.9,
+    "bottom_pct": 2.2,
+    "delta_pp": 0.7
+   },
+   {
+    "tool": "HotJar",
+    "top_pct": 3.3,
+    "bottom_pct": 2.7,
+    "delta_pp": 0.6
+   },
+   {
+    "tool": "Figma",
+    "top_pct": 3.3,
+    "bottom_pct": 2.7,
+    "delta_pp": 0.6
+   },
+   {
+    "tool": "Hootsuite",
+    "top_pct": 4.1,
+    "bottom_pct": 3.5,
+    "delta_pp": 0.6
+   },
+   {
+    "tool": "DHL",
+    "top_pct": 2.9,
+    "bottom_pct": 2.4,
+    "delta_pp": 0.5
+   },
+   {
+    "tool": "Airtable",
+    "top_pct": 5.9,
+    "bottom_pct": 5.6,
+    "delta_pp": 0.4
+   },
+   {
+    "tool": "Google Alerts",
+    "top_pct": 6.4,
+    "bottom_pct": 5.9,
+    "delta_pp": 0.4
+   },
+   {
+    "tool": "UPS",
+    "top_pct": 4.1,
+    "bottom_pct": 3.7,
+    "delta_pp": 0.4
+   },
+   {
+    "tool": "WhatsApp",
+    "top_pct": 5.9,
+    "bottom_pct": 5.7,
+    "delta_pp": 0.2
+   },
+   {
+    "tool": "trello",
+    "top_pct": 3.9,
+    "bottom_pct": 3.9,
+    "delta_pp": 0.0
+   },
+   {
+    "tool": "Zoom",
+    "top_pct": 7.6,
+    "bottom_pct": 7.6,
+    "delta_pp": -0.0
+   },
+   {
+    "tool": "eBay",
+    "top_pct": 3.5,
+    "bottom_pct": 3.5,
+    "delta_pp": -0.1
+   },
+   {
+    "tool": "Google AdSense",
+    "top_pct": 6.8,
+    "bottom_pct": 7.1,
+    "delta_pp": -0.3
+   },
+   {
+    "tool": "Adobe Suite",
+    "top_pct": 11.9,
+    "bottom_pct": 12.3,
+    "delta_pp": -0.4
+   },
+   {
+    "tool": "Amazon Payments",
+    "top_pct": 5.3,
+    "bottom_pct": 5.7,
+    "delta_pp": -0.4
+   },
+   {
+    "tool": "Yelp",
+    "top_pct": 2.7,
+    "bottom_pct": 3.0,
+    "delta_pp": -0.4
+   },
+   {
+    "tool": "Microsoft Off...",
+    "top_pct": 5.1,
+    "bottom_pct": 5.6,
+    "delta_pp": -0.5
+   },
+   {
+    "tool": "Apple Pay",
+    "top_pct": 4.5,
+    "bottom_pct": 5.1,
+    "delta_pp": -0.6
+   },
+   {
+    "tool": "Loom",
+    "top_pct": 2.7,
+    "bottom_pct": 3.4,
+    "delta_pp": -0.7
+   },
+   {
+    "tool": "Buffer",
+    "top_pct": 2.7,
+    "bottom_pct": 3.4,
+    "delta_pp": -0.7
+   },
+   {
+    "tool": "Yoast",
+    "top_pct": 3.5,
+    "bottom_pct": 4.2,
+    "delta_pp": -0.7
+   },
+   {
+    "tool": "Skype",
+    "top_pct": 3.5,
+    "bottom_pct": 4.2,
+    "delta_pp": -0.7
+   },
+   {
+    "tool": "Shopify",
+    "top_pct": 16.8,
+    "bottom_pct": 17.6,
+    "delta_pp": -0.8
+   },
+   {
+    "tool": "Instagram Ads",
+    "top_pct": 15.4,
+    "bottom_pct": 16.2,
+    "delta_pp": -0.8
+   },
+   {
+    "tool": "Kickstarter",
+    "top_pct": 2.5,
+    "bottom_pct": 3.2,
+    "delta_pp": -0.8
+   },
+   {
+    "tool": "Evernote",
+    "top_pct": 2.7,
+    "bottom_pct": 3.5,
+    "delta_pp": -0.9
+   },
+   {
+    "tool": "Shutterstock",
+    "top_pct": 3.5,
+    "bottom_pct": 4.4,
+    "delta_pp": -0.9
+   },
+   {
+    "tool": "G Suite",
+    "top_pct": 14.5,
+    "bottom_pct": 15.5,
+    "delta_pp": -1.0
+   },
+   {
+    "tool": "Google Search...",
+    "top_pct": 2.5,
+    "bottom_pct": 3.5,
+    "delta_pp": -1.1
+   },
+   {
+    "tool": "Medium",
+    "top_pct": 4.9,
+    "bottom_pct": 6.1,
+    "delta_pp": -1.2
+   },
+   {
+    "tool": "Moz",
+    "top_pct": 5.7,
+    "bottom_pct": 6.9,
+    "delta_pp": -1.2
+   },
+   {
+    "tool": "Shopify Payments",
+    "top_pct": 8.4,
+    "bottom_pct": 9.8,
+    "delta_pp": -1.4
+   },
+   {
+    "tool": "Pexels",
+    "top_pct": 2.3,
+    "bottom_pct": 3.7,
+    "delta_pp": -1.5
+   },
+   {
+    "tool": "Trello",
+    "top_pct": 11.9,
+    "bottom_pct": 13.5,
+    "delta_pp": -1.6
+   },
+   {
+    "tool": "Facebook Ads",
+    "top_pct": 18.9,
+    "bottom_pct": 20.6,
+    "delta_pp": -1.8
+   },
+   {
+    "tool": "Google Sheets",
+    "top_pct": 4.9,
+    "bottom_pct": 6.8,
+    "delta_pp": -1.8
+   },
+   {
+    "tool": "Bitly",
+    "top_pct": 2.3,
+    "bottom_pct": 4.1,
+    "delta_pp": -1.8
+   },
+   {
+    "tool": "Twitter",
+    "top_pct": 41.8,
+    "bottom_pct": 43.6,
+    "delta_pp": -1.8
+   },
+   {
+    "tool": "Dropbox",
+    "top_pct": 16.0,
+    "bottom_pct": 17.9,
+    "delta_pp": -1.9
+   },
+   {
+    "tool": "Spotify",
+    "top_pct": 1.8,
+    "bottom_pct": 3.9,
+    "delta_pp": -2.0
+   },
+   {
+    "tool": "Google My Bus...",
+    "top_pct": 7.4,
+    "bottom_pct": 9.5,
+    "delta_pp": -2.1
+   },
+   {
+    "tool": "Notion",
+    "top_pct": 3.7,
+    "bottom_pct": 5.9,
+    "delta_pp": -2.2
+   },
+   {
+    "tool": "Reddit",
+    "top_pct": 4.1,
+    "bottom_pct": 6.2,
+    "delta_pp": -2.2
+   },
+   {
+    "tool": "LinkedIn",
+    "top_pct": 18.4,
+    "bottom_pct": 20.8,
+    "delta_pp": -2.3
+   },
+   {
+    "tool": "Squarespace",
+    "top_pct": 2.9,
+    "bottom_pct": 5.2,
+    "delta_pp": -2.4
+   },
+   {
+    "tool": "ConvertKit",
+    "top_pct": 1.8,
+    "bottom_pct": 4.4,
+    "delta_pp": -2.5
+   },
+   {
+    "tool": "Adobe Creativ...",
+    "top_pct": 8.8,
+    "bottom_pct": 11.5,
+    "delta_pp": -2.7
+   },
+   {
+    "tool": "Fiverr",
+    "top_pct": 9.0,
+    "bottom_pct": 11.8,
+    "delta_pp": -2.8
+   },
+   {
+    "tool": "USPS",
+    "top_pct": 3.9,
+    "bottom_pct": 6.9,
+    "delta_pp": -3.0
+   },
+   {
+    "tool": "Square",
+    "top_pct": 4.3,
+    "bottom_pct": 7.4,
+    "delta_pp": -3.1
+   },
+   {
+    "tool": "Venmo",
+    "top_pct": 2.3,
+    "bottom_pct": 5.4,
+    "delta_pp": -3.2
+   },
+   {
+    "tool": "Grammarly",
+    "top_pct": 3.1,
+    "bottom_pct": 6.4,
+    "delta_pp": -3.3
+   },
+   {
+    "tool": "Unsplash",
+    "top_pct": 5.1,
+    "bottom_pct": 8.6,
+    "delta_pp": -3.5
+   },
+   {
+    "tool": "Wave",
+    "top_pct": 1.2,
+    "bottom_pct": 4.7,
+    "delta_pp": -3.5
+   },
+   {
+    "tool": "Udemy",
+    "top_pct": 1.8,
+    "bottom_pct": 5.4,
+    "delta_pp": -3.6
+   },
+   {
+    "tool": "GoDaddy",
+    "top_pct": 5.3,
+    "bottom_pct": 9.3,
+    "delta_pp": -4.0
+   },
+   {
+    "tool": "Pixabay",
+    "top_pct": 2.7,
+    "bottom_pct": 6.8,
+    "delta_pp": -4.1
+   },
+   {
+    "tool": "Google Workspace",
+    "top_pct": 22.7,
+    "bottom_pct": 27.0,
+    "delta_pp": -4.3
+   },
+   {
+    "tool": "Stripe",
+    "top_pct": 15.2,
+    "bottom_pct": 19.8,
+    "delta_pp": -4.6
+   },
+   {
+    "tool": "WooCommerce",
+    "top_pct": 3.9,
+    "bottom_pct": 8.6,
+    "delta_pp": -4.7
+   },
+   {
+    "tool": "MailChimp",
+    "top_pct": 23.4,
+    "bottom_pct": 28.4,
+    "delta_pp": -5.0
+   },
+   {
+    "tool": "Pinterest",
+    "top_pct": 12.7,
+    "bottom_pct": 18.1,
+    "delta_pp": -5.4
+   },
+   {
+    "tool": "WordPress",
+    "top_pct": 16.4,
+    "bottom_pct": 22.0,
+    "delta_pp": -5.6
+   },
+   {
+    "tool": "Instagram",
+    "top_pct": 57.4,
+    "bottom_pct": 63.0,
+    "delta_pp": -5.6
+   },
+   {
+    "tool": "Wix.com",
+    "top_pct": 1.2,
+    "bottom_pct": 6.9,
+    "delta_pp": -5.7
+   },
+   {
+    "tool": "Etsy",
+    "top_pct": 2.5,
+    "bottom_pct": 9.3,
+    "delta_pp": -6.8
+   },
+   {
+    "tool": "Google Analytics",
+    "top_pct": 24.8,
+    "bottom_pct": 32.4,
+    "delta_pp": -7.6
+   },
+   {
+    "tool": "Facebook",
+    "top_pct": 25.0,
+    "bottom_pct": 34.5,
+    "delta_pp": -9.5
+   },
+   {
+    "tool": "Google Drive",
+    "top_pct": 49.6,
+    "bottom_pct": 60.6,
+    "delta_pp": -11.1
+   },
+   {
+    "tool": "PayPal",
+    "top_pct": 18.0,
+    "bottom_pct": 29.4,
+    "delta_pp": -11.4
+   },
+   {
+    "tool": "Canva",
+    "top_pct": 11.1,
+    "bottom_pct": 22.6,
+    "delta_pp": -11.6
+   }
+  ],
+  "n_top_ge50k": 488,
+  "n_bottom_lt50k": 592,
+  "bias": "Correlation: team/infra tools (Slack, HubSpot) appear in big companies because they have teams, not because tools cause revenue. Small-shop tools (Canva, PayPal, Etsy, Wix) cluster in the lower half."
+ },
+ "validation": {}
+}
